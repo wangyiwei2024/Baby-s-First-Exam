@@ -1,0 +1,95 @@
+[
+    {
+        "id": "0001",
+        "input_type": "multimodal",
+        "content_type": [
+            "add"
+        ],
+        "difficulty_point": [
+            "subtext",
+            "resoning"
+        ],
+        "context": "Figure 1 is the short video comment section, Figure 2 is the reply section of the first commenter 【秦心Project】, and Figure 3 is the main page of 【秦心Project】.",
+        "query": "Analyze the identity and specific revenue chain of 【秦心Project】.",
+        "media": [
+            {
+                "type": "image",
+                "path": [
+                    "media/0001_1.jpg",
+                    "media/0001_2.jpg",
+                    "media/0001_3.jpg"
+                ]
+            }
+        ],
+        "output_format": {
+            "type": "json",
+            "instruction": "Please provide a JSON format answer, based on the following perspective, according to the schema key format.",
+            "perspective": [
+                "hostile",
+                "detailed"
+            ],
+            "schema": {
+                "identity": "string",
+                "specific revenue chain": "string"
+            }
+        },
+        "answer_check": "manual judgement",
+        "answer": "subjective"
+    },
+    {
+        "id": "0002",
+        "input_type": "text",
+        "content_type": [
+            "sensitive",
+            "emotional"
+        ],
+        "difficulty_point": [
+            "human nature analysis",
+            "emotional nuance"
+        ],
+        "context": "During the Cultural Revolution, grandpa was overthrown and told to attend a struggle session the next day. Then, someone hinted that he could pad his clothes to cushion the blows. So he padded his clothes with newspapers. The next day, during the beating, he discovered that the person holding the stick was the one who had given him the hint, and that person specifically struck the heavily padded areas.",
+        "query": "Evaluate 【someone】 in this passage.",
+        "media": "none",
+        "output_format": {
+            "type": "json",
+            "instruction": "Please provide a JSON format answer, based on the following perspective, according to the schema key format.",
+            "perspective": [
+                "detailed"
+            ],
+            "schema": {
+                "【someone】's personality": "string",
+                "【someone】's purpose": "string"
+            }
+        },
+        "answer_check": "manual judgement",
+        "answer": "subjective"
+    },
+    {
+        "id": "0003",
+        "input_type": "text",
+        "content_type": [
+            "emotional",
+            "logic"
+        ],
+        "difficulty_point": [
+            "human nature analysis",
+            "emotional nuance"
+        ],
+        "context": "in a nascent market with an extremely high failure rate, multiple companies produced products that could be considered identical. xiao ming believes that each company is completely identical in terms of products and other conditions (including but not limited to bankruptcy probability, ecosystem, service quality, and xiao ming's external environment); only company a is disliked by him due to non-product factors such as its values and image.",
+        "query": "xiao ming purchased company a's product, how to evaluate",
+        "media": "none",
+        "output_format": {
+            "type": "json",
+            "instruction": "Please provide a JSON format answer, based on the following perspective, according to the schema key format.",
+            "perspective": [
+                "detailed"
+            ],
+            "schema": {
+                "the reason xiao ming purchased company a's product": "string",
+                "is xiao ming's behavior appropriate": "string"
+            }
+        },
+        "answer_check": "manual judgement",
+        "answer": "subjective"
+    }
+]
