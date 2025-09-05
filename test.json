@@ -15,9 +15,9 @@
             {
                 "type": "image",
                 "path": [
-                    "media/0001_1.jpg",
-                    "media/0001_2.jpg",
-                    "media/0001_3.jpg"
+                    "media/0001_1.png",
+                    "media/0001_2.png",
+                    "media/0001_3.png"
                 ]
             }
         ],
@@ -66,27 +66,34 @@
     },
     {
         "id": "0003",
-        "input_type": "text",
+        "input_type": "multimodal",
         "content_type": [
-            "emotional",
-            "logic"
+            "knowledge"
         ],
         "difficulty_point": [
-            "human nature analysis",
-            "emotional nuance"
+            "domain knowledge",
+            "conceptual understanding"
         ],
-        "context": "in a nascent market with an extremely high failure rate, multiple companies produced products that could be considered identical. xiao ming believes that each company is completely identical in terms of products and other conditions (including but not limited to bankruptcy probability, ecosystem, service quality, and xiao ming's external environment); only company a is disliked by him due to non-product factors such as its values and image.",
-        "query": "xiao ming purchased company a's product, how to evaluate",
-        "media": "none",
+        "context": "A Kerbal Space Program screenshot",
+        "query": "Identify the biggest problem with this rocket.",
+        "media": [
+            {
+                "type": "image",
+                "path": [
+                    "media/0003_1.png"
+                ]
+            }
+        ],
         "output_format": {
             "type": "json",
             "instruction": "Please provide a JSON format answer, based on the following perspective, according to the schema key format.",
             "perspective": [
+                "technical",
                 "detailed"
             ],
             "schema": {
-                "the reason xiao ming purchased company a's product": "string",
-                "is xiao ming's behavior appropriate": "string"
+                "biggest problem": "string",
+                "reasoning": "string"
             }
         },
         "answer_check": "manual judgement",
