@@ -98,5 +98,39 @@
         },
         "answer_check": "manual judgement",
         "answer": "subjective"
+    },
+    {
+        "id": "0004",
+        "input_type": "multimodal",
+        "content_type": [
+            "detailed"
+        ],
+        "difficulty_point": [
+            "background understanding",
+            "detailed observation"
+        ],
+        "context": "A photo",
+        "query": "Determine when the image was taken and what scene it shows.",
+        "media": [
+            {
+                "type": "image",
+                "path": [
+                    "media/0004_1.png"
+                ]
+            }
+        ],
+        "output_format": {
+            "type": "json",
+            "instruction": "Please provide a JSON format answer, based on the following perspective, according to the schema key format.",
+            "perspective": [
+                "detailed"
+            ],
+            "schema": {
+                "time": "string",
+                "scene": "string"
+            }
+        },
+        "answer_check": "manual judgement",
+        "answer": "subjective"
     }
 ]
