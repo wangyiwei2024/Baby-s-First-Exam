@@ -2,13 +2,6 @@
     {
         "id": "0001",
         "input_type": "multimodal",
-        "content_type": [
-            "add"
-        ],
-        "difficulty_point": [
-            "subtext",
-            "resoning"
-        ],
         "context": "Figure 1 is the short video comment section, Figure 2 is the reply section of the first commenter 【秦心Project】, and Figure 3 is the main page of 【秦心Project】.",
         "query": "Analyze the identity and specific revenue chain of 【秦心Project】.",
         "media": [
@@ -24,56 +17,30 @@
         "output_format": {
             "type": "json",
             "instruction": "Please provide a JSON format answer, based on the following perspective, according to the schema key format.",
-            "perspective": [
-                "hostile",
-                "detailed"
-            ],
             "schema": {
                 "identity": "string",
                 "specific revenue chain": "string"
             }
-        },
-        "answer_check": "manual judgement",
-        "answer": "subjective"
+        }
     },
     {
         "id": "0002",
         "input_type": "text",
-        "content_type": [
-            "sensitive",
-            "emotional"
-        ],
-        "difficulty_point": [
-            "human nature analysis",
-            "emotional nuance"
-        ],
         "context": "During the Cultural Revolution, grandpa was overthrown and told to attend a struggle session the next day. Then, someone hinted that he could pad his clothes to cushion the blows. So he padded his clothes with newspapers. The next day, during the beating, he discovered that the person holding the stick was the one who had given him the hint, and that person specifically struck the heavily padded areas.",
         "query": "Evaluate 【someone】 in this passage.",
         "media": "none",
         "output_format": {
             "type": "json",
             "instruction": "Please provide a JSON format answer, based on the following perspective, according to the schema key format.",
-            "perspective": [
-                "detailed"
-            ],
             "schema": {
                 "【someone】's personality": "string",
                 "【someone】's purpose": "string"
             }
-        },
-        "answer_check": "manual judgement",
-        "answer": "subjective"
+        }
     },
     {
         "id": "0003",
         "input_type": "multimodal",
-        "content_type": [
-            "knowledge"
-        ],
-        "difficulty_point": [
-            "domain knowledge",
-            "conceptual understanding"
-        ],
         "context": "A Kerbal Space Program screenshot",
         "query": "Identify the biggest problem with this rocket.",
         "media": [
@@ -87,29 +54,16 @@
         "output_format": {
             "type": "json",
             "instruction": "Please provide a JSON format answer, based on the following perspective, according to the schema key format.",
-            "perspective": [
-                "technical",
-                "detailed"
-            ],
             "schema": {
                 "biggest problem": "string",
                 "reasoning": "string"
             }
-        },
-        "answer_check": "manual judgement",
-        "answer": "subjective"
+        }
     },
     {
         "id": "0004",
         "input_type": "multimodal",
-        "content_type": [
-            "detailed"
-        ],
-        "difficulty_point": [
-            "background understanding",
-            "detailed observation"
-        ],
-        "context": "A photo",
+        "context": "A photo shot in a restaurant",
         "query": "Determine when the image was taken and what scene it shows.",
         "media": [
             {
@@ -122,15 +76,10 @@
         "output_format": {
             "type": "json",
             "instruction": "Please provide a JSON format answer, based on the following perspective, according to the schema key format.",
-            "perspective": [
-                "detailed"
-            ],
             "schema": {
                 "time": "string",
                 "scene": "string"
             }
         },
-        "answer_check": "manual judgement",
-        "answer": "subjective"
     }
 ]
