@@ -16,7 +16,7 @@
         ],
         "output_format": {
             "type": "json",
-            "instruction": "Please provide a JSON format answer, based on the following perspective, according to the schema key format.",
+            "instruction": "Please provide a JSON format answer, according to the schema key format.",
             "schema": {
                 "identity": "string",
                 "specific revenue chain": "string"
@@ -31,7 +31,7 @@
         "media": "none",
         "output_format": {
             "type": "json",
-            "instruction": "Please provide a JSON format answer, based on the following perspective, according to the schema key format.",
+            "instruction": "Please provide a JSON format answer, according to the schema key format.",
             "schema": {
                 "【someone】's personality": "string",
                 "【someone】's purpose": "string"
@@ -53,7 +53,7 @@
         ],
         "output_format": {
             "type": "json",
-            "instruction": "Please provide a JSON format answer, based on the following perspective, according to the schema key format.",
+            "instruction": "Please provide a JSON format answer, according to the schema key format.",
             "schema": {
                 "biggest problem": "string",
                 "reasoning": "string"
@@ -75,11 +75,49 @@
         ],
         "output_format": {
             "type": "json",
-            "instruction": "Please provide a JSON format answer, based on the following perspective, according to the schema key format.",
+            "instruction": "Please provide a JSON format answer, according to the schema key format.",
             "schema": {
-                "time": "string",
-                "scene": "string"
+                "historical background ": "string",
+                "what is happening": "string"
             }
-        },
+        }
+    },
+    {
+        "id": "0005",
+        "input_type": "text",
+        "context": "In 1945, Chairman Kim Il Sung first proposed the vision of letting the people eat white rice and drink meat soup. Afterwards, his successor, General Kim Jong Il, inherited this wish and declared that he would ensure the people could eat rice and drink meat soup. And last year, General Kim Jong Un once again emphasized that he would make it so the people are eating rice and drinking meat soup within three years. A single bowl of rice and meat soup embodies more than 70 years of tireless care and concern from three generations of great leaders. When I think of this, my tears just can't stop falling",
+        "query": "What is the meaning of this passage?",
+        "media": "none",
+        "output_format": {
+            "type": "json",
+            "instruction": "Please provide a JSON format answer, according to the schema key format.",
+            "schema": {
+                "literal meaning": "string",
+                "ironic meaning": "string"
+            }
+        }
+    },
+    {
+        "id": "0006",
+        "input_type": "multimodal",
+        "context": "a photo with humorous stars",
+        "query": "What does this image most likely represent, and why?",
+        "media": [
+            {
+                "type": "image",
+                "path": [
+                    "media/0006_1.png"
+                ]
+            }
+        ],
+        "output_format": {
+            "type": "json",
+            "instruction": "Please provide a JSON format answer, according to the schema key format.",
+            "schema": {
+                "representation": "string",
+                "reasoning": "string"
+            }
+        }
     }
+
 ]
